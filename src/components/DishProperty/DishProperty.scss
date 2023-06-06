@@ -1,0 +1,47 @@
+@import '../../theme/_variables.scss';
+
+.property-list {
+  .title {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 24px;
+    color: $primary-color;
+    text-align: left;
+  }
+
+  .values {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    .separator {
+      color: $white-color;
+      -webkit-text-fill-color: $white-color;
+    }
+
+    .value {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 20px;
+
+      &--default {
+        color: $white-color;
+      }
+      &--green {
+        background: $green-gradient;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      &--orange {
+        background: $orange-gradient;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      &--red {
+        color: $red-color;
+      }
+    }
+  }
+}

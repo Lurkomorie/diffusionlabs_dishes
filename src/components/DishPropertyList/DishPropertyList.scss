@@ -1,0 +1,13 @@
+@import "../../theme/_variables.scss";
+
+.property-list-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  padding: 13px 24px;
+  background: $background-light-color;
+  box-shadow: $default-box-shadow;
+  border-radius: 6px;
+  box-sizing: border-box;
+}

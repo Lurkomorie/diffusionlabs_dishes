@@ -1,0 +1,23 @@
+@import "../../theme/_variables.scss";
+
+.social-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 5px;
+
+  .social {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $background-network-color;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    img {
+      width: 10px;
+      height: 10px;
+    }
+  }
+}

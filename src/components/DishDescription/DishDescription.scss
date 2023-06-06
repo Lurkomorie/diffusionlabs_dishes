@@ -1,0 +1,64 @@
+@import "../../theme/_variables.scss";
+
+.description-wrapper {
+  background-color: $background-light-color;
+  padding: 10px;
+  border-radius: 6px;
+  .description-container {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+    gap: 16px;
+    border-radius: 6px;
+    background-color: $blue-color;
+    box-shadow: $big-box-shadow;
+
+    .top {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+
+      .icon {
+        width: 32px;
+        height: 32px;
+      }
+
+      .title {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 24px;
+        color: $background-color;
+        padding-left: 10px;
+      }
+    }
+
+    .description {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      color: $background-color;
+    }
+
+    .btn {
+      border: none;
+      box-shadow: none;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      padding: 9px 14px 11px;
+      border-radius: 6px;
+      background-color: $background-button-color;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 16px;
+      cursor: pointer;
+      color: $white-color;
+
+      &:hover {
+        background-color: $background-network-color;
+      }
+    }
+  }
+
+}
