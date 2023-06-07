@@ -6,7 +6,7 @@ const SocialNetworks: React.FC = () => {
     return (
         <div className="social-container">
             {SOCIAL_NETWORKS.map((network) => (
-                <a className="social" href={network.link}>
+                <a key={network.link} className="social" href={network.link}>
                     <img src={`/icons/social/${network.icon}.svg`} alt="icon"/>
                 </a>
             ))}

@@ -38,7 +38,7 @@ const SearchBar: React.FC<Props> = ({ data }) => {
     }
 
     const handleItemClick = (item: Dish) => () => {
-        setSearchQuery(item.name);
+        clearInput();
         dispatch(setCurrentDishId(item.id))
         setDropdownVisibility(false);
     }
